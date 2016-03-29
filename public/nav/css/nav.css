@@ -1,5 +1,6 @@
 body{
     background-color: #f5f5f5;
+    color: #545454;
 }
 *{
     -webkit-box-sizing: border-box;
@@ -9,27 +10,50 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.c-white{
+    color: #FFFFFF;
+}
 .border{
     border: 1px solid yellow;
 }
+.nav-top{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    background-color: #1a1a1a;
+    top: 0;
+}
 .container{
+    margin-top: 60px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 0;
 }
+.title{
+    background: #cccccc;
+    line-height: 2;
+    padding-left: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
 .inline-list li{
     list-style: none;
     float: left;
     width: 25%;
-    border: 1px solid #1a1a1a;
+    border: 1px solid #dfdfdf;
     text-align: center;
     border-right: none;
 }
 .inline-list li .item-link{
     padding: 20px 0;
     display: block;
+    position: relative;
+    color: inherit;
+}
+.inline-list li .item-link img{
+    width: 100px;
+    height: 100px;
 }
 .inline-list li:nth-child(n+5)
 {
@@ -38,12 +62,31 @@ body{
 .inline-list li:nth-child(4n+4),
 .inline-list li:last-child
 {
-    border-right:  1px solid #1a1a1a;
+    border-right:  1px solid #dfdfdf;
 }
-
+.inline-list li:hover .popover{
+    display: block;
+}
 .inline-list:after{
     content: '';
     display: block;
     clear: both;
 }
+.popover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    line-height: 2.0;
+}
+.popover .middle{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    padding: 10px;
 
+}
