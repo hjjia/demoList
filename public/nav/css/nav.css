@@ -1,6 +1,6 @@
 body{
-    background-color: #f5f5f5;
     color: #545454;
+    background: url(../images/bg_white.png);
 }
 *{
     -webkit-box-sizing: border-box;
@@ -18,10 +18,32 @@ body{
 }
 .nav-top{
     width: 100%;
-    height: 55px;
+    height: 60px;
     position: fixed;
     background-color: #1a1a1a;
     top: 0;
+    z-index: 99;
+}
+.nav-top .nav-top-inner{
+    /*width: 60%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-top .logo{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 40px;
+    background: url("../images/bg_white.png");
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-top .logo .block-link{
+    display: block;
+    background: url("../images/name.png") no-repeat center center ;
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
 }
 .container{
     margin-top: 60px;
